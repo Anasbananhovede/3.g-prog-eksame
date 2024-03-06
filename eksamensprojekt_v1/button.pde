@@ -13,6 +13,7 @@ class Firkant{
   void display(){
     fill(farve);
     rect(x,y,w,h);
+    text(50, 350, 350, 75);
 /*    fill(255);
  rect(0, 50, 200, 150);
  

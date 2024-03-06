@@ -1,7 +1,7 @@
 Firkant minKnap;
 Firkant minKnap1;
 Firkant minKnap2;
-
+Generate generator;
 
 void setup(){
  size(500,500); 
@@ -9,6 +9,7 @@ void setup(){
  minKnap = new Firkant(50, 350, 350, 75);
 minKnap1 = new Firkant(250, 50, 200, 150);
 minKnap2 = new Firkant(0, 50, 200, 150);
+generator = new Generate(); 
 }
 
 
@@ -18,6 +19,9 @@ void draw(){
   minKnap.display();
   minKnap1.display();  
 minKnap2.display();  
+generator.indlæs(generator.Elever);
+
+/*(mouseX,mouseY);*/
 
 }
 
