@@ -1,5 +1,5 @@
 class Firkant{
-
+boolean  ettryk = false;
   int x,y,w,h;
   float farve = 255;
     
@@ -29,7 +29,8 @@ class Firkant{
   
   void clickFirkant(){
     if(mouseX > x && mouseX < x + w && mouseY > y && mouseY < y + h){
-      farve = random(0,255);
+      
+     ettryk = true; 
     }
   }
 
