@@ -3,6 +3,7 @@ Firkant minKnap2;
 Firkant minKnap1;
 Generate generator;
 Firkant ettryk;
+TxtFil keypressed;
 
 void setup() {
   size(500, 500);
@@ -12,6 +13,7 @@ void setup() {
   minKnap1 = new Firkant(0, 50, 200, 150);
   generator = new Generate();
   ettryk = new Firkant();
+  keypressed = new TxtFil();
 }
 
 
@@ -19,7 +21,7 @@ void setup() {
 void draw() {
   
   minKnap.display();
-  minKnap1.display();
+ // minKnap1.display();
   //minKnap2.display();
     fill(0);
   textSize(48);
@@ -28,16 +30,23 @@ void draw() {
   if (minKnap.ettryk) {
     generator.indlæs(generator.Elever);
     minKnap.ettryk = false;
+   
+   
+    
   }
 }
 
 
 void mousePressed() {
   minKnap.clickFirkant();
-
+   
   // Check if the mouse is within the bounds of the rectangle
   /*  if (mouseX > 350 && mouseX < 400 + 350 &&
    mouseY > 75 && mouseY < 125 + 75) {
    
    }*/
+}
+
+void keyPressed(){
+   keypressed.keyPressed();
 }
