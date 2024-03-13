@@ -17,13 +17,13 @@ void setup() {
 
 
 void draw() {
-
+  
   minKnap.display();
   minKnap1.display();
   //minKnap2.display();
-  
-
-  /*(mouseX,mouseY);*/
+    fill(0);
+  textSize(48);
+  text("Generate",70, 350, 350, 75);
 
   if (minKnap.ettryk) {
     generator.indlæs(generator.Elever);
