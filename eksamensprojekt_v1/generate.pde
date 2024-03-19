@@ -16,12 +16,12 @@ class Generate {
 
     }
     
-    int y =30;
+    int y =50;
 
     for (String e : Elever) {
       fill(0);
       textSize(12);
-      text(e, 250, y, 350, 75);
+      text(e, 550, y, 350, 75);
       y += 10;
     }
   }

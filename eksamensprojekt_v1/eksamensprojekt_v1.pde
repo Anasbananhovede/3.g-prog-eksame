@@ -1,16 +1,20 @@
 Firkant minKnap;
 Firkant minKnap2;
 Firkant minKnap1;
+Firkant minKnap3;
+Firkant minKnap4;
 Generate generator;
 Firkant ettryk;
 TxtFil keypressed;
 
 void setup() {
-  size(500, 500);
+  size(800, 800);
 
-  minKnap = new Firkant(50, 350, 350, 75);
-  minKnap2 = new Firkant(250, 50, 200, 150);
-  minKnap1 = new Firkant(0, 50, 200, 150);
+  minKnap = new Firkant(50, 450, 350, 75);
+  minKnap2 = new Firkant(550, 50, 200, 350);
+  minKnap1 = new Firkant(10, 50, 200, 150);
+  minKnap3 = new Firkant(10, 250, 200, 50);
+  minKnap4 = new Firkant(10, 325, 200, 50);
   generator = new Generate();
   ettryk = new Firkant();
   keypressed = new TxtFil();
@@ -21,11 +25,13 @@ void setup() {
 void draw() {
   
   minKnap.display();
- // minKnap1.display();
-  //minKnap2.display();
+ minKnap1.display();
+ // minKnap2.display();
+  minKnap3.display();
+    minKnap4.display();
     fill(0);
   textSize(48);
-  text("Generate",70, 350, 350, 75);
+  text("Generate",70, 465, 350, 75);
 
   if (minKnap.ettryk) {
     generator.indlæs(generator.Elever);
