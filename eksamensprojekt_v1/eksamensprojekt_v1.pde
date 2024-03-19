@@ -6,7 +6,7 @@ Firkant minKnap4;
 Generate generator;
 Firkant ettryk;
 TxtFil keypressed;
-
+String content="Text";
 void setup() {
   size(800, 800);
 
@@ -26,20 +26,23 @@ void draw() {
   
   minKnap.display();
  minKnap1.display();
- // minKnap2.display();
+ minKnap2.display();
   minKnap3.display();
     minKnap4.display();
     fill(0);
   textSize(48);
   text("Generate",70, 465, 350, 75);
+  text("skriv",50, 65, 350, 75);
 
   if (minKnap.ettryk) {
-    generator.indlæs(generator.Elever);
+    generator.indlæs();
     minKnap.ettryk = false;
    
    
     
   }
+  
+  generator.tegn();
 }
 
 
@@ -55,4 +58,10 @@ void mousePressed() {
 
 void keyPressed(){
    keypressed.keyPressed();
+   
+     if(keyPressed && keyCode != 8){
+   content = content + key; 
+  }else{
+   content = content.substring(0,content.length()-1); 
+  }
 }

@@ -6,7 +6,10 @@ class Generate {
     Elever = loadStrings("Elever3i2.txt");
   }
 
-  void indlæs(String[] Elever) {
+  void indlæs() {
+    
+    
+    
     for ( int i = 0; i < Elever.length; i++ ) {
 
       int r = (int)random(Elever.length);
@@ -15,7 +18,9 @@ class Generate {
       Elever[r]=tmp;
 
     }
-    
+  }
+  
+  void tegn(){
     int y =50;
 
     for (String e : Elever) {
