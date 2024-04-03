@@ -5,7 +5,7 @@ Firkant minKnap3;
 Firkant minKnap4;
 Generate generator;
 Firkant ettryk;
-TxtFil keypressed;
+TextField txtFieldAntalGrupper;
 String content="Text";
 void setup() {
   size(800, 800);
@@ -17,38 +17,38 @@ void setup() {
   minKnap4 = new Firkant(10, 325, 200, 50);
   generator = new Generate();
   ettryk = new Firkant();
-  keypressed = new TxtFil();
+  txtFieldAntalGrupper = new TextField();
 }
 
 
 
 void draw() {
-  
+
   minKnap.display();
- minKnap1.display();
- minKnap2.display();
+  minKnap1.display();
+  minKnap2.display();
   minKnap3.display();
-    minKnap4.display();
-    fill(0);
+  minKnap4.display();
+  fill(0);
   textSize(48);
-  text("Generate",70, 465, 350, 75);
-  text("skriv",50, 65, 350, 75);
+  text("Generate", 70, 465, 350, 75);
+  text("skriv", 50, 65, 350, 75);
 
   if (minKnap.ettryk) {
     generator.indlæs();
     minKnap.ettryk = false;
-   
-   
-    
   }
-  
+
+
+
   generator.tegn();
+  txtFieldAntalGrupper.display();
 }
 
 
 void mousePressed() {
   minKnap.clickFirkant();
-   
+
   // Check if the mouse is within the bounds of the rectangle
   /*  if (mouseX > 350 && mouseX < 400 + 350 &&
    mouseY > 75 && mouseY < 125 + 75) {
@@ -56,12 +56,12 @@ void mousePressed() {
    }*/
 }
 
-void keyPressed(){
-   keypressed.keyPressed();
-   
-     if(keyPressed && keyCode != 8){
-   content = content + key; 
-  }else{
-   content = content.substring(0,content.length()-1); 
+void keyPressed() {
+  txtFieldAntalGrupper.keyPressed();
+
+  if (keyPressed && keyCode != 8) {
+    content = content + key;
+  } else {
+    content = content.substring(0, content.length()-1);
   }
 }
