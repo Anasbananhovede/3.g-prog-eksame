@@ -28,9 +28,7 @@ class Generate {
       textSize(12);
       text(e, x, y, 350, 75);
       y += 10;
-   /*   if ( e =  txtFieldAntalGrupper.value) {
-       
-      }*/
+
     }
   }
 }

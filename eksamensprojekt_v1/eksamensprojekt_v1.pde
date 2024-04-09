@@ -10,11 +10,11 @@ String content="Text";
 void setup() {
   size(800, 800);
 
-  minKnap = new Firkant(50, 450, 350, 75);
-  minKnap2 = new Firkant(550, 50, 200, 350);
-  minKnap1 = new Firkant(10, 50, 200, 150);
-  minKnap3 = new Firkant(10, 250, 200, 50);
-  minKnap4 = new Firkant(10, 325, 200, 50);
+  minKnap = new Firkant(50, 450, 350, 75);//knap til at generate grupper
+  minKnap2 = new Firkant(550, 50, 200, 350);// display af grupper
+  minKnap1 = new Firkant(10, 50, 200, 150);//input felt til at skrive antal grupper
+  minKnap3 = new Firkant(10, 250, 200, 50);// input felt til skrive hvilke elever der ikke skal med i gruppe genering
+  minKnap4 = new Firkant(10, 325, 200, 50);// input felt til at adskilde specifikke elever
   generator = new Generate();
   ettryk = new Firkant();
   txtFieldAntalGrupper = new TextField();
@@ -49,11 +49,6 @@ void draw() {
 void mousePressed() {
   minKnap.clickFirkant();
 
-  // Check if the mouse is within the bounds of the rectangle
-  /*  if (mouseX > 350 && mouseX < 400 + 350 &&
-   mouseY > 75 && mouseY < 125 + 75) {
-   
-   }*/
 }
 
 void keyPressed() {
