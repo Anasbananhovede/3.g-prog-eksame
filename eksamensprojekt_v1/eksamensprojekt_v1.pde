@@ -11,7 +11,7 @@ void setup() {
   size(800, 800);
 
   minKnap = new Firkant(50, 450, 350, 75);//knap til at generate grupper
-  minKnap2 = new Firkant(550, 50, 200, 350);// display af grupper
+  minKnap2 = new Firkant(450, 50, 300, 400);// display af grupper
   minKnap1 = new Firkant(10, 50, 200, 150);//input felt til at skrive antal grupper
   minKnap3 = new Firkant(10, 250, 200, 50);// input felt til skrive hvilke elever der ikke skal med i gruppe genering
   minKnap4 = new Firkant(10, 325, 200, 50);// input felt til at adskilde specifikke elever

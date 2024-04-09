@@ -25,9 +25,9 @@ class Generate {
     int x = 555;
     for (String e : Elever) {
       fill(0);
-      textSize(12);
-      text(e, x, y, 350, 75);
-      y += 10;
+      textSize(15);
+      text(e, x, y, 350, 55);
+      y += 13;
 
     }
   }
