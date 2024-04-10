@@ -17,7 +17,7 @@ class Firkant {
   void display() {
     fill(farve);
     rect(x, y, w, h);
-    //text(40, 350, 350, 75);(var grunden tuil at der bare stod "50" i midten af skærmen
+    //text(40, 350, 350, 75);//(var grunden tuil at der bare stod "50" i midten af skærmen
   }
 
 
