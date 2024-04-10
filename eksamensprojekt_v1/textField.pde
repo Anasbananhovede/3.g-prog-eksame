@@ -5,7 +5,7 @@ class TextField {
   TextField() {
   }
 
-
+//gøre at vi kan indtaste et input
   void keyPressed() {
     content = content +key;
     try {
@@ -16,7 +16,7 @@ class TextField {
 
     println(value, keyCode);
   }
-
+//viser vores input
   void display() {
     fill(0);
     textSize(30);
